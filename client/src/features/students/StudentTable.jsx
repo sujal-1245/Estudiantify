@@ -23,7 +23,7 @@ const StudentTable = ({ students, onEdit, onDelete, filter }) => {
     {/* Table Rows */}
     <AnimatePresence>
       {filteredStudents.length === 0 ? (
-        <div className="p-6 text-center text-sm text-gray-400">
+        <div className="p-6 text-center text-sm text-gray-800 dark:text-gray-400">
           No students match the filter.
         </div>
       ) : (
