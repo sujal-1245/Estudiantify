@@ -1,6 +1,7 @@
 // src/utils/constants.js
 
-export const API_BASE_URL = "https://estudiantify.onrender.com/";
+export const API_BASE_URL = "https://estudiantify.onrender.com/api/";
+
 
 
 export const LOCAL_STORAGE_KEY = "students";
