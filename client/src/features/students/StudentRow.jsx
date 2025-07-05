@@ -10,22 +10,22 @@ const StudentRow = ({ student, onEdit, onDelete }) => {
   animate={{ opacity: 1, y: 0 }}
   exit={{ opacity: 0, y: -10 }}
   transition={{ duration: 0.3 }}
-  className="grid grid-cols-2 sm:grid-cols-6 items-center px-4 py-3 text-sm sm:text-base text-white border-b border-white/10 hover:bg-white/10 transition"
+  className="grid grid-cols-2 sm:grid-cols-6 items-center px-4 py-3 text-sm sm:text-base text-white/10 border-b border-white/10 hover:bg-white/10 transition"
 >
   {/* Name: Always visible */}
-  <span className="font-medium text-white">{student.name}</span>
+  <span className="font-medium text-black/80 dark:text-white">{student.name}</span>
 
   {/* RegNo: hidden on xs */}
-  <span className="hidden sm:block text-white/80">{student.regNo}</span>
+  <span className="hidden sm:block text-black/80 dark:text-white/80">{student.regNo}</span>
 
   {/* Dept: hidden on xs */}
-  <span className="hidden sm:block text-white/80">{student.department}</span>
+  <span className="hidden sm:block text-black/80 dark:text-white/80">{student.department}</span>
 
   {/* Year: visible even on mobile */}
-  <span className="text-white/80 text-center sm:text-left">{student.year}</span>
+  <span className="text-black/80 dark:text-white/80 text-center sm:text-left">{student.year}</span>
 
   {/* Marks: hidden on xs */}
-  <span className="hidden sm:block text-white/80">{student.marks}</span>
+  <span className="hidden sm:block text-black/80 dark:text-white/80">{student.marks}</span>
 
   {/* Actions */}
   <span className="flex justify-end gap-3">
